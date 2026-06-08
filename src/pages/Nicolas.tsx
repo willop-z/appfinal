@@ -8,7 +8,7 @@ import {
   IonButton
 } from '@ionic/react'
 
-import './Home.css'
+import './Nicolas.css'
 
 interface Props {
   usuario: string
