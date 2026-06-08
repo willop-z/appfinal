@@ -14,6 +14,8 @@ import {
   IonText
 } from '@ionic/react'
 
+import './Login.css'
+
 // inicio sesión
 
 interface Props {
