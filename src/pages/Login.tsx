@@ -34,7 +34,7 @@ function Login({ onLogin }: Props) {
       clave: '456'
     },
     {
-      usuario: 'Camilo',
+      usuario: 'camilo',
       clave: '789'
     }
   ]
@@ -65,7 +65,7 @@ function Login({ onLogin }: Props) {
       <IonContent className="ion-padding fondo-login">
 
         <h1 className="titulo-login">
-          Sistema de Acceso
+          Acceso a la aplicación
         </h1>
 
         <IonCard className="card-login">
