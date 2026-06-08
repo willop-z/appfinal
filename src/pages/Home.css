@@ -1,5 +1,6 @@
 .fondo-home {
   background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+  max-width: 100%;
 }
 
 .titulo-home {
@@ -62,20 +63,16 @@
 }
 
 .boton-logout {
- position: absolute;
-    top: 16px;
-    right: 16px;
-    margin: 0;
-    z-index: 10;
-    background-color: #dc2626;
-    color: white;
-    --background: #dc2626 !important;
-    --background-hover: #b91c1c !important;
-    --color: white !important;
-    font-weight: bold;
-    --border-radius: 8px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.2);
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border-radius: 12px;
+  height: 50px;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  text-transform: none;
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+}
 
 ion-card-title {
   text-align: center;

@@ -25,7 +25,7 @@ function Home({
 }: Props) {
   return (
     <IonPage>
-      <IonContent className="ion-padding fondo-home">
+      <IonContent className="fondo-home">
 
         <h1 className="titulo-home">
           Bienvenidos al Grupo del Rincón

@@ -14,14 +14,13 @@ interface Props {
     usuario: string
     onLogout: () => void
     onVolver: () => void
-    onToContacto: () => void
 }
 
 function Wilmer({
     usuario,
     onLogout,
     onVolver,
-    
+
 }: Props) {
     return (
     <IonPage>

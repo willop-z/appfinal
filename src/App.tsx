@@ -41,9 +41,6 @@ function App() {
               usuario={usuario}
               onLogout={() => setUsuario('')}
               onVolver={() => setPantallaActual('home')}
-              onToContacto={() =>
-                alert('Aquí puedes agregar la página de contacto')
-              }
             />
           )}
 
