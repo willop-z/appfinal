@@ -13,9 +13,10 @@ import './Nicolas.css'
 interface Props {
   usuario: string
   onLogout: () => void
+  onVolver: () => void
 }
 
-function Home({ usuario, onLogout }: Props) {
+function Nicolas({ usuario, onLogout, onVolver }: Props) {
   return (
     <IonPage>
       <IonContent className="ion-padding fondo-home">
@@ -23,6 +24,13 @@ function Home({ usuario, onLogout }: Props) {
         <h1 className="titulo-home">
           Bienvenido a mi espacio personal
         </h1>
+
+        <IonButton
+          expand="block"
+          onClick={onVolver}
+        >
+          ← Volver al inicio
+        </IonButton>
 
         <IonCard className="card-home">
 
@@ -69,4 +77,5 @@ function Home({ usuario, onLogout }: Props) {
   )
 }
 
-export default Home
+export default Nicolas
+

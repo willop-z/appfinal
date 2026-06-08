@@ -8,14 +8,15 @@ import {
   IonButton
 } from '@ionic/react'
 
-import '/camilo.css'
+import './Camilo.css'
 
 interface Props {
   usuario: string
   onLogout: () => void
+  onVolver: () => void
 }
 
-function Home({ usuario, onLogout }: Props) {
+function Camilo({ usuario, onLogout, onVolver }: Props) {
   return (
     <IonPage>
       <IonContent className="ion-padding fondo-home">
@@ -23,6 +24,13 @@ function Home({ usuario, onLogout }: Props) {
         <h1 className="titulo-home">
           Bienvenido a mi espacio personal
         </h1>
+
+        <IonButton
+          expand="block"
+          onClick={onVolver}
+        >
+          ← Volver al inicio
+        </IonButton>
 
         <IonCard className="card-home">
 
@@ -41,10 +49,10 @@ function Home({ usuario, onLogout }: Props) {
             <h3>Sobre mí</h3>
 
             <ul className="lista-home">
-              <li>Me gusta escuchar musica</li>
+              <li>🎵 Me gusta escuchar música</li>
               <li>💻 Apasionado por la programación</li>
               <li>🌐 Interesado en redes y desarrollo web</li>
-              <li>Disfruto ver peliculas de accion y terror</li>
+              <li>🎬 Disfruto ver películas de acción y terror</li>
             </ul>
 
             <p>
@@ -69,4 +77,5 @@ function Home({ usuario, onLogout }: Props) {
   )
 }
 
-export default Home
+export default Camilo
+

@@ -5,18 +5,24 @@ import {
   IonCardHeader,
   IonCardTitle,
   IonCardContent,
-  IonButton,
-  IonRouterLink
+  IonButton
 } from '@ionic/react'
 
 import './Home.css'
 
 interface Props {
-  usuario: string
   onLogout: () => void
+  onWilmer: () => void
+  onCamilo: () => void
+  onNicolas: () => void
 }
 
-function Home({ onLogout }: Props) {
+function Home({
+  onLogout,
+  onWilmer,
+  onCamilo,
+  onNicolas
+}: Props) {
   return (
     <IonPage>
       <IonContent className="ion-padding fondo-home">
@@ -36,28 +42,33 @@ function Home({ onLogout }: Props) {
           <IonCardContent>
 
             <p className="texto-home">
-              Este es nuestro proyecto desarrollado con Ionic React.
+              Este es nuestro proyecto desarrollado del grupo
             </p>
 
-            <ul className="lista-home">
-              <li>
-                <IonRouterLink routerLink="/wilmer">
-                  👨‍💻 Wilmer Garcia
-                </IonRouterLink>
-              </li>
+            <div className="lista-home">
 
-              <li>
-                <IonRouterLink routerLink="/camilo">
-                  👨‍💻 Camilo Quiroga
-                </IonRouterLink>
-              </li>
+              <IonButton
+                expand="block"
+                onClick={onWilmer}
+              >
+                👨‍💻 Wilmer Garcia
+              </IonButton>
 
-              <li>
-                <IonRouterLink routerLink="/nicolas">
-                  👨‍💻 Nicolas Bonilla
-                </IonRouterLink>
-              </li>
-            </ul>
+              <IonButton
+                expand="block"
+                onClick={onCamilo}
+              >
+                👨‍💻 Camilo Quiroga
+              </IonButton>
+
+              <IonButton
+                expand="block"
+                onClick={onNicolas}
+              >
+                👨‍💻 Nicolas Bonilla
+              </IonButton>
+
+            </div>
 
             <p>
               Gracias por visitar nuestra aplicación.
@@ -82,3 +93,4 @@ function Home({ onLogout }: Props) {
 }
 
 export default Home
+
