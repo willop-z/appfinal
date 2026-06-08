@@ -33,7 +33,6 @@
     box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.2);
 }
 
-
 .card-home {
     max-width: 90%;
     margin: 30px auto 32px auto;
@@ -174,7 +173,7 @@
     background: #fafafa;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
-    }
+}
 
 .habilidades h4, .intereses h4 {
     margin-top: 0;

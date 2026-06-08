@@ -38,7 +38,7 @@ function App() {
 
           {pantallaActual === 'wilmer' && (
             <Wilmer
-              usuario={usuario}
+              usuario='Wilmer'
               onLogout={() => setUsuario('')}
               onVolver={() => setPantallaActual('home')}
             />
@@ -46,7 +46,7 @@ function App() {
 
           {pantallaActual === 'camilo' && (
             <Camilo
-              usuario={usuario}
+              usuario='Camilo'
               onLogout={() => setUsuario('')}
               onVolver={() => setPantallaActual('home')}
             />
@@ -54,7 +54,7 @@ function App() {
 
           {pantallaActual === 'nicolas' && (
             <Nicolas
-              usuario={usuario}
+              usuario='Nicolás'
               onLogout={() => setUsuario('')}
               onVolver={() => setPantallaActual('home')}
             />

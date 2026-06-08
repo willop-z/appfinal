@@ -32,6 +32,14 @@ function Nicolas({ usuario, onLogout, onVolver }: Props) {
           ← Volver al inicio
         </IonButton>
 
+        <IonButton
+            color="danger"
+            className="boton-logout"
+            onClick={onLogout}
+        >
+            Cerrar sesión
+        </IonButton>
+
         <IonCard className="card-home">
 
           <IonCardHeader>
@@ -58,15 +66,6 @@ function Nicolas({ usuario, onLogout, onVolver }: Props) {
             <p>
               Gracias por visitar mi aplicación.
             </p>
-
-            <IonButton
-              color="danger"
-              expand="block"
-              className="boton-logout"
-              onClick={onLogout}
-            >
-              Cerrar sesión
-            </IonButton>
 
           </IonCardContent>
 

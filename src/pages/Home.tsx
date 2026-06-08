@@ -31,6 +31,14 @@ function Home({
           Bienvenidos al Grupo del Rincón
         </h1>
 
+        <IonButton
+            color="danger"
+            className="boton-logout"
+            onClick={onLogout}
+        >
+            Cerrar sesión
+        </IonButton>
+
         <IonCard className="card-home">
 
           <IonCardHeader>
@@ -71,17 +79,8 @@ function Home({
             </div>
 
             <p>
-              Gracias por visitar nuestra aplicación.
+              Gracias por visitar nuestra aplicación web.
             </p>
-
-            <IonButton
-              color="danger"
-              expand="block"
-              className="boton-logout"
-              onClick={onLogout}
-            >
-              Cerrar sesión
-            </IonButton>
 
           </IonCardContent>
 
