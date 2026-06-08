@@ -1,225 +1,211 @@
 .fondo-home {
-  background-color: #f4f7f5 !important;
-  --background: #f4f7f5 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f7f5 !important;
+    --background: #f4f7f5 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .titulo-home {
-  text-align: center;
-  margin-top: 64px;
-  margin-bottom: 48px;
-  padding-left: 160px;
-  padding-right: 160px;
-  color: #111827;
-  font-weight: 800;
-  font-size: 2.2rem;
-  letter-spacing: -0.5px;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 48px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #111827;
+    font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
 }
 
 .boton-logout {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  margin: 0;
-  z-index: 10;
-  background-color: #dc2626 !important;
-  color: white !important;
-  --background: #dc2626 !important;
-  --background-hover: #b91c1c !important;
-  --color: white !important;
-  font-weight: bold;
-  --border-radius: 8px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.2);
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    margin: 0;
+    z-index: 10;
+    background-color: #dc2626;
+    color: white;
+    --background: #dc2626 !important;
+    --background-hover: #b91c1c !important;
+    --color: white !important;
+    font-weight: bold;
+    --border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.2);
 }
 
 
 .card-home {
-  max-width: 960px;
-  margin: 30px auto 32px auto;
-  box-sizing: border-box;
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(20, 83, 45, 0.08),
-              0 8px 10px -6px rgba(0, 0, 0, 0.03);
-  border: 1px solid #e2e8f0;
+    max-width: 60px;
+    margin: 30px auto 32px auto;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(20, 83, 45, 0.08);
+    border: 1px solid #e2e8f0;
 }
 
 .card-header {
-  padding: 28px 32px;
-  border-bottom: 1px solid #e2e8f0;
-  background: linear-gradient(to right, #f0fdf4, #ffffff);
+    padding: 28px 32px;
+    border-bottom: 1px solid #e2e8f0;
+    background: linear-gradient(to right, #f0fdf4, #ffffff);
 }
 
 .card-header h2, .card-title {
-  color: #14532d; 
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin: 0;
+    color: #14532d; 
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 0;
 }
 
 .presentacion {
-  margin-top: 26px;
-  padding: 24px 32px;
-  background-color: #f8fafc;
-  border-radius: 12px;
-  margin-left: 24px;
-  margin-right: 24px;
-  border-left: 5px solid #16a34a;
+    margin-top: 26px;
+    padding: 24px 32px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-left: 5px solid #16a34a;
 }
 
 .presentacion, .gustos, #habilidadesEintereses {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .texto-home {
-  line-height: 1.7;
-  color: #334155;
-  font-size: 1.05rem;
-  text-align: justify;
-  margin: 0;
+    line-height: 1.7;
+    color: #334155;
+    font-size: 1.05rem;
+    text-align: justify;
+    margin: 0;
 }
 
 
 .gustos h2, #habilidadesEintereses h2 {
-  color: #14532d; 
-  font-size: 1.6rem;
-  font-weight: 700;
-  border-bottom: 2px solid #bbf7d0;
-  padding-bottom: 8px;
-  margin-top: 0;
-  margin-bottom: 20px;
+    color: #14532d; 
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 2px solid #bbf7d0;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .bloqueGustos {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-top: 16px;
-  padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 16px;
+    padding: 0 24px;
 }
 
 @media (min-width: 600px) {
-  .bloqueGustos {
-    grid-template-columns: 1fr 1fr;
-  }
+    .bloqueGustos {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .item {
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #f0fdf4;
-  background: #f0fdf4;
-  border: 1px solid #dcfce7;
-  border-radius: 12px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0fdf4;
+    background: #f0fdf4;
+    border: 1px solid #dcfce7;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .item strong {
-  color: #14532d;
-  font-size: 1.15rem;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 12px;
-  border-bottom: 1px solid #bbf7d0;
-  padding-bottom: 6px;
+    color: #14532d;
+    font-size: 1.15rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #bbf7d0;
+    padding-bottom: 6px;
 }
 
 .item ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 .item li {
-  position: relative;
-  padding-left: 18px;
-  margin-bottom: 10px;
-  color: #334155;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    color: #334155;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
 }
 
 
 .item li::before {
-  content: "■";
-  color: #16a34a;
-  font-size: 0.7rem;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+    content: "■";
+    color: #16a34a;
+    font-size: 0.7rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .bloqueHabilidades {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  margin-top: 16px;
-  padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 16px;
+    padding: 0 24px;
 }
 
 @media (min-width: 768px) {
-  .bloqueHabilidades {
-    grid-template-columns: 1fr 1fr;
-  }
+    .bloqueHabilidades {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .habilidades, .intereses {
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #fafafa;
-  background: #fafafa;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-}
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    background: #fafafa;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    }
 
 .habilidades h4, .intereses h4 {
-  margin-top: 0;
-  margin-bottom: 16px;
-  color: #14532d;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #14532d;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 .habilidades div, .intereses div {
-  margin: 10px 0;
-  padding: 8px 16px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-left: 4px solid #16a34a;
-  border-radius: 6px;
-  color: #475569;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: background-color 0.2s, color 0.2s;
+    margin: 10px 0;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #16a34a;
+    border-radius: 6px;
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .zona-navegacion {
-  text-align: center;
-  margin-top: 48px;
-  margin-bottom: 24px;
-  display: flex;
-  justify-content: center;
-  padding: 0 24px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
 }
 
-.boton-contacto {
-  display: block;
-  margin: 16px auto 0 auto;
-  width: 100%;
-  max-width: 400px;
-  --background: #dc2626 !important;
-  --background-hover: #b91c1c !important;
-  --color: white !important;
-  font-weight: bold;
-  --border-radius: 8px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.2);
-}
