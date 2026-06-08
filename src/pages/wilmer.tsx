@@ -17,7 +17,6 @@ interface Props {
 }
 
 function Wilmer({
-    usuario,
     onLogout,
     onVolver,
 
@@ -51,7 +50,7 @@ function Wilmer({
         <IonCardHeader>
 
             <IonCardTitle>
-            Bienvenido, este es el portafolio personal de {usuario} García
+                Bienvenido, este es el portafolio personal de Wilmer García
             </IonCardTitle>
 
         </IonCardHeader>

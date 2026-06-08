@@ -80,14 +80,3 @@ ion-card-title {
   font-weight: 700;
   color: #0f172a;
 }
-
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
