@@ -46,7 +46,7 @@ function Home({ usuario, onLogout, onWilmer, onCamilo, onNicolas }: Props) {
           <IonCardContent>
             <section className="presentacion-home">
             <p className="texto-home">
-              Este es nuestro proyecto aplicativo web desarrollado con Ionic React. Aquí podrás conocer a los integrantes del grupo y explorar nuestras funcionalidades. ¡Gracias por visitarnos!
+              Este es nuestro proyecto aplicativo web desarrollado con Ionic React. Aquí podrás conocer a los integrantes del grupo y explorar un poco acerca de nosotros ¡Gracias por visitarnos!
             </p>
             </section>
 

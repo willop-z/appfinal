@@ -29,6 +29,8 @@
 
 .boton-login {
     margin-top: 25px;
+    background-color: #1e3a8a;
+    border-radius: 18px;
 }   
 
 .mensaje-error {
