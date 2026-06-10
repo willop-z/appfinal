@@ -10,6 +10,12 @@ import Nicolas from './pages/Nicolas'
 function App() {
   const [usuario, setUsuario] = useState('')
 
+  const nombresParaMostrar: Record<string, string> = {
+    wilmer: 'Wilmer',
+    camilo: 'Camilo',
+    nicolas: 'Nicolás'
+  }
+
   const [pantallaActual, setPantallaActual] = useState<
     'home' | 'wilmer' | 'camilo' | 'nicolas'
   >('home')
@@ -37,7 +43,7 @@ function App() {
 
           {pantallaActual === 'wilmer' && (
             <Wilmer
-              usuario='Wilmer'
+              usuario={nombresParaMostrar[usuario]}
               onLogout={() => setUsuario('')}
               onVolver={() => setPantallaActual('home')}
             />
@@ -45,7 +51,7 @@ function App() {
 
           {pantallaActual === 'camilo' && (
             <Camilo
-              usuario='Camilo'
+              usuario={nombresParaMostrar[usuario]}
               onLogout={() => setUsuario('')}
               onVolver={() => setPantallaActual('home')}
             />
@@ -53,7 +59,7 @@ function App() {
 
           {pantallaActual === 'nicolas' && (
             <Nicolas
-              usuario='Nicolás'
+              usuario={nombresParaMostrar[usuario]}
               onLogout={() => setUsuario('')}
               onVolver={() => setPantallaActual('home')}
             />
@@ -77,5 +83,3 @@ function App() {
 }
 
 export default App
-
-
