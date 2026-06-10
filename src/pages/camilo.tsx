@@ -16,17 +16,18 @@ interface Props {
   onVolver: () => void
 }
 
-function Camilo({ usuario, onLogout, onVolver }: Props) {
+function Camilo({onLogout, onVolver }: Props) {
   return (
     <IonPage>
       <IonContent className="ion-padding fondo-home">
 
-        <h1 className="titulo-home">
-          Bienvenido a mi espacio personal
+        <h1 className="tituloHome">
+          Camilo Quiroga Ardila
         </h1>
 
         <IonButton
           expand="block"
+          className="botonReturn"
           onClick={onVolver}
         >
           ← Volver al inicio
@@ -34,29 +35,31 @@ function Camilo({ usuario, onLogout, onVolver }: Props) {
 
         <IonButton
             color="danger"
-            className="boton-logout"
+            className="botonLogout"
             onClick={onLogout}
         >
             Cerrar sesión
         </IonButton>
 
-        <IonCard className="card-home">
+        <IonCard className="cardHome">
 
           <IonCardHeader>
             <IonCardTitle>
-              Hola, {usuario} 👋
+              Bienvenido, este es el portafolio personal de Camilo Quiroga
             </IonCardTitle>
           </IonCardHeader>
 
           <IonCardContent>
 
-            <p className="texto-home">
-              Este es mi proyecto personal desarrollado con Ionic React.
+            <section className="presentacionIntegrante">
+            <p className="textoHome">
+              Soy estudiante de tecnico de codificacion de software en TecAlianza y proximamente entrare a la etapa productiva, tengo 23 años, estoy laborando en redeban entregando datafonos para los diferentes comercios a nivel Bogotá y a veces por fuera de Bogotá, en mi tiempo libre me gusta escuchar música, jugar xbox.
             </p>
+            </section>
 
-            <h3>Sobre mí</h3>
+            <h3>Acerca de mí</h3>
 
-            <ul className="lista-home">
+            <ul className="listaHome">
               <li>🎵 Me gusta escuchar música</li>
               <li>💻 Apasionado por la programación</li>
               <li>🌐 Interesado en redes y desarrollo web</li>
@@ -64,7 +67,7 @@ function Camilo({ usuario, onLogout, onVolver }: Props) {
             </ul>
 
             <p>
-              Gracias por visitar mi aplicación.
+              Gracias por visitar mi página web.
             </p>
 
 

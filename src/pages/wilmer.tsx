@@ -24,14 +24,15 @@ function Wilmer({
     return (
     <IonPage>
 
-        <IonContent className="ion-padding fondo-home">
+        <IonContent className="ion-padding fondoHome">
 
-        <h1 className="titulo-home">
+        <h1 className="tituloHome">
             Wilmer Alexander García Lopez
         </h1>
 
         <IonButton
             expand="block"
+            className="botonReturn"
             onClick={onVolver}
         >
             ← Volver al inicio
@@ -39,13 +40,13 @@ function Wilmer({
 
         <IonButton
             color="danger"
-            className="boton-logout"
+            className="botonLogout"
             onClick={onLogout}
         >
             Cerrar sesión
         </IonButton>
 
-        <IonCard className="card-home">
+        <IonCard className="cardHome">
 
         <IonCardHeader>
 
@@ -57,8 +58,8 @@ function Wilmer({
 
         <IonCardContent>
 
-            <section className="presentacion">
-                <p className="texto-home">
+            <section className="presentacionIntegrante">
+                <p className="textoHome">
                 Hola, que tal. Me llamo Wilmer y tengo 27 años, soy estudiante de codificación en software en TecAlianza y próximamente entraré en la etapa productiva; vivo en Toberin, tengo dos gatas y trabajo de forma remota como transcriptor de datos para una aseguradora en salud.
                 </p>
             </section>

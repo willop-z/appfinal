@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { IonApp } from '@ionic/react'
 import '@ionic/react/css/core.css'
-
 import Login from './pages/Login'
 import Home from './pages/Home'
 import Wilmer from './pages/wilmer'

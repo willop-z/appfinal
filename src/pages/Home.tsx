@@ -48,11 +48,13 @@ function Home({
           </IonCardHeader>
 
           <IonCardContent>
-
+            <section className="presentacion-home">
             <p className="texto-home">
-              Este es nuestro proyecto desarrollado del grupo
+              Este es nuestro proyecto aplicativo web desarrollado con Ionic React. Aquí podrás conocer a los integrantes del grupo y explorar nuestras funcionalidades. ¡Gracias por visitarnos!
             </p>
+            </section>
 
+            <section className="lista-home">
             <div className="lista-home">
 
               <IonButton
@@ -77,10 +79,13 @@ function Home({
               </IonButton>
 
             </div>
-
+            </section>
+            <br />
+              <section className="agradecimiento">
             <p>
               Gracias por visitar nuestra aplicación web.
             </p>
+            </section>
 
           </IonCardContent>
 

@@ -1,91 +1,129 @@
-.fondo-home {
-  --ion-background-color: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+.fondo-home, .fondoHome {
+  --background: #f8fafc ;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-.titulo-home {
+.tituloHome {
   text-align: center;
-  font-size: 32px;
-  font-weight: 800;
-  margin: 40px 0 25px;
-  color: #1e293b;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-
-.card-home {
-  max-width: 500px;
-  margin: auto;
-  border-radius: 20px;
-  background: #ffffff;
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.08),
-    0 4px 10px rgba(0, 0, 0, 0.04);
-  border: none;
-  overflow: hidden;
-  animation: aparecer 0.6s ease;
-}
-
-.texto-home {
-  color: #475569;
-  font-size: 16px;
-  line-height: 1.8;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.lista-home {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.lista-home li {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  color: white;
-  padding: 15px 18px;
-  margin-bottom: 12px;
-  border-radius: 12px;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.25);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.lista-home li:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 18px rgba(59, 130, 246, 0.35);
-}
-
-.boton-logout {
-  position: absolute;
-    top: 16px;
-    right: 16px;
-    margin: 0;
-    z-index: 10;
-    background-color: #dc2626;
-    color: white;
-    --background: #dc2626 !important;
-    --background-hover: #b91c1c !important;
-    --color: white !important;
-    font-weight: bold;
-    --border-radius: 8px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.2);
-}
-ion-card-title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
+  margin: 70px 0 15px 0;
   color: #0f172a;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  letter-spacing: -0.5px;
 }
 
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
+.botonLogout {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 100;
+  --background: #942525 ;
+  --border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.botonReturn {
+  --background: #1e3a8a ;
+  --color: white;
+  --border-radius: 6px;
+  font-weight: 600;
+  max-width: 650px;
+  margin: 10px auto 20px auto;
+  height: 40px;
+}
+
+.cardHome {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+on-card-header {
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 24px ;
+  text-align: center;
+}
+
+ion-card-title {
+  color: #1e3a8a;
+  font-size: 1.35rem ;
+  font-weight: 700 ;
+  line-height: 1.4;
+}
+
+ion-card-content {
+  padding: 24px 28px ;
+}
+
+.presentacionIntegrante {
+  background: #f0f4f8;
+  border-left: 4px solid #1e3a8a ;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.textoHome {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+ion-card-content h3 {
+  color: #1e3a8a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.listaHome {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 24px 0;
+}
+
+.listaHome li {
+  position: relative;
+  padding-left: 6px;
+  margin-bottom: 10px;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+ion-card-content > p:last-child {
+  text-align: center;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 16px;
+  margin: 16px 0 0 0;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .tituloHome {
+    margin-top: 85px;
+  }
+  
+  .cardHome {
+    width: 95%;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  ion-card-header, ion-card-content {
+    padding: 16px ;
   }
 }

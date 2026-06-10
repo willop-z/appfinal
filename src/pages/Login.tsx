@@ -16,8 +16,6 @@ import {
 
 import './Login.css'
 
-// inicio sesión
-
 interface Props {
   onLogin: (usuario: string) => void
 }
