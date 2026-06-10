@@ -11,9 +11,9 @@ function App() {
   const [usuario, setUsuario] = useState('')
 
   const nombresParaMostrar: Record<string, string> = {
-    wilmer: 'Wilmer',
-    camilo: 'Camilo',
-    nicolas: 'Nicolás'
+    wilmer: 'Wilmercito',
+    camilo: 'Camilito',
+    nicolas: 'Nikito'
   }
 
   const [pantallaActual, setPantallaActual] = useState<
@@ -34,6 +34,7 @@ function App() {
         <>
           {pantallaActual === 'home' && (
             <Home
+              usuario={nombresParaMostrar[usuario]}
               onLogout={() => setUsuario('')}
               onWilmer={() => setPantallaActual('wilmer')}
               onCamilo={() => setPantallaActual('camilo')}

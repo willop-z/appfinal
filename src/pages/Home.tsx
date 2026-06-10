@@ -11,18 +11,14 @@ import {
 import './Home.css'
 
 interface Props {
+  usuario: string
   onLogout: () => void
   onWilmer: () => void
   onCamilo: () => void
   onNicolas: () => void
 }
 
-function Home({
-  onLogout,
-  onWilmer,
-  onCamilo,
-  onNicolas
-}: Props) {
+function Home({ usuario, onLogout, onWilmer, onCamilo, onNicolas }: Props) {
   return (
     <IonPage>
       <IonContent className="fondo-home">
@@ -42,8 +38,8 @@ function Home({
         <IonCard className="card-home">
 
           <IonCardHeader>
-            <IonCardTitle>
-              Hola 👋
+            <IonCardTitle className="saludo-usuario">
+              Hola {usuario} 👋
             </IonCardTitle>
           </IonCardHeader>
 
@@ -97,4 +93,3 @@ function Home({
 }
 
 export default Home
-
